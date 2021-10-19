@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Child care",
+    "img": "https://i.ibb.co/Sr81Zc1/service-1.jpg",
+    "description": "lroen"
+  },
+  {
+    "id": 2,
+    "name": "Personal Care",
+    "img": "https://i.ibb.co/PjwdRvD/service-2.jpg",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 3,
+    "name": "CT scan",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMnnRxx4c55IsKAf0fcUVd8Nxi7m9Wfpotw&usqp=CAU",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 4,
+    "name": "Joint replacement",
+    "img": "https://www.saukprairiehealthcare.org/portals/0/Images/Microsite-HERO/Joint-Replacement-Prairie-du-Sac-WI-800x325.jpg",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 5,
+    "name": "Examination & Diagnosis",
+    "img": "https://i.ibb.co/7tF12GM/blog-4.jpg",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 6,
+    "name": "Alzheimer's disease",
+    "img": "https://i.ibb.co/prq0mdq/blog-1.jpg",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 7,
+    "name": "Laboratory services",
+    "img": "https://i.ibb.co/7YpfJVS/blog-2.jpg",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 8,
+    "name": "Heart Disease",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtFw5-u2yjqL3TBNB3NSxbml0G9GsalQz1g&usqp=CAU",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 9,
+    "name": "Dental Care",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFNfgIgACO0BvJs9cGQ9X1dqfcGuUdnCyJw&usqp=CAU",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 10,
+    "name": "Body Surgery",
+    "img": "https://media.istockphoto.com/photos/close-up-of-a-doctor-marking-the-human-skin-picture-id626961186?b=1&k=20&m=626961186&s=170667a&w=0&h=hygSKeoREg2jYTTUEO1nUEOKgiQmdKUN-ODxaMhX03Y=",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 11,
+    "name": "Neurology Surgery",
+    "img": "https://media.istockphoto.com/photos/male-doctor-in-surgical-clothes-looking-at-vertebral-mri-scan-picture-id1204177559?b=1&k=20&m=1204177559&s=170667a&w=0&h=-8O5xFKheEguWWwbj957RF3SPE56PrByF-B47Nb8N3c=",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 12,
+    "name": "Gynecology",
+    "img": "https://media.istockphoto.com/photos/having-advise-with-a-gynecologist-picture-id638749062?b=1&k=20&m=638749062&s=170667a&w=0&h=o1xV9j-cqbBQPIeFRW7jy-Lih9xHbPTdBSFJaUQopuM=",
+    "description": "lorem30 dfjsjkfh"
+  },
+  {
+    "id": 13,
+    "name": "Blood Test",
+    "img": "https://i.ibb.co/sQfxZ8D/service-6.jpg",
+    "description": "lorem30 dfjsjkfh"
+  }
+]

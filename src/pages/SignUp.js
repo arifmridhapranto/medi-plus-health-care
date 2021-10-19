@@ -1,16 +1,16 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
-import LoginForm from "../components/form/LoginForm";
+import RegistrationForm from "../components/form/RegistrationForm";
 import Header from "../components/Header/Header";
 
-const login = () => {
+const SignIn = () => {
   return (
     <div>
       <Header></Header>
-      <LoginForm></LoginForm>
+      <RegistrationForm></RegistrationForm>
       <Footer></Footer>
     </div>
   );
 };
 
-export default login;
+export default SignIn;

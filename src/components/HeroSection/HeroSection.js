@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -16,11 +16,11 @@ const HeroSection = () => {
           too much joy, escapes from the greater, accepts and abandons the
           things that make him happy.
         </p>
-        <NavLink
+        <Link
           to='/login'
           className='w-40 px-4 my-6 mx-1 text-xl font-semibold border border-gray-900 text-center text-white rounded-lg py-1 bg-btnHover hover:bg-btnColor'>
-          Services
-        </NavLink>
+          Services <i className='fas fa-chevron-right'></i>
+        </Link>
       </div>
     </>
   );

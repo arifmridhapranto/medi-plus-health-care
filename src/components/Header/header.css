@@ -1,0 +1,9 @@
+.header {
+  background: linear-gradient(rgba(34, 58, 102, 0.9), rgba(34, 58, 102, 0.9)),
+    url(https://i.ibb.co/NrQpTxQ/22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}

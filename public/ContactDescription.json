@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Call Us",
+    "details": 88151202152,
+    "icon": "fas fa-headset"
+  },
+  {
+    "id": 2,
+    "name": "Email Us",
+    "details": "contact@mail.com",
+    "icon": "fas fa-envelope-open-text"
+  },
+  {
+    "id": 3,
+    "name": "Location",
+    "details": "Dhaka,Bangladesh",
+    "icon": "fas fa-map-marker-alt"
+  }
+]

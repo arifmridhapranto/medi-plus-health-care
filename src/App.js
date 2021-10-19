@@ -6,39 +6,47 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import LogIn from "./pages/LogIn";
-import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Service from "./pages/Service";
+import AuthProvider from "./contexts/AuthProvider";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
   return (
     <div className=''>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route exact path='/home'>
-            <Home></Home>
-          </Route>
-          <Route exact path='/about'>
-            <About></About>
-          </Route>
-          <Route exact path='/contact'>
-            <Contact></Contact>
-          </Route>
-          <Route exact path='/services'>
-            <Services></Services>
-          </Route>
-          <Route exact path='/login'>
-            <LogIn></LogIn>
-          </Route>
-          <Route exact path='/signin'>
-            <SignIn></SignIn>
-          </Route>
-          <Route exact path='*'>
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route exact path='/home'>
+              <Home></Home>
+            </Route>
+            <PrivateRoute exact path='/about'>
+              <About></About>
+            </PrivateRoute>
+            <Route exact path='/contact'>
+              <Contact></Contact>
+            </Route>
+            <PrivateRoute exact path='/services'>
+              <Services></Services>
+            </PrivateRoute>
+            <PrivateRoute path='/service/:serviceName'>
+              <Service></Service>
+            </PrivateRoute>
+            <Route exact path='/login'>
+              <LogIn></LogIn>
+            </Route>
+            <Route exact path='/signup'>
+              <SignUp></SignUp>
+            </Route>
+            <Route exact path='*'>
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

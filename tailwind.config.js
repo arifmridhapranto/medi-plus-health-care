@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-bg": "url('https://i.ibb.co/gWwgwq5/slider-bg-1.jpg')",
+        "header-bg": "url('https://i.ibb.co/NrQpTxQ/22.jpg')",
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
@@ -14,6 +15,7 @@ module.exports = {
       textColor: (theme) => theme("colors"),
       textColor: {
         text_color: "#e12454",
+        textColor2: "#223a66",
       },
     },
     variants: {
