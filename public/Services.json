@@ -3,78 +3,78 @@
     "id": 1,
     "name": "Child care",
     "img": "https://i.ibb.co/Sr81Zc1/service-1.jpg",
-    "description": "lroen"
+    "description": "Child care, otherwise known as day care, is the care and supervision of a child or multiple children at a time, whose ages range from two weeks to eighteen years. Child care is a broad topic that covers a wide spectrum of professionals, institutions, contexts, activities, and social and cultural conventions. Early child care is an equally important and often overlooked component of child development."
   },
   {
     "id": 2,
     "name": "Personal Care",
     "img": "https://i.ibb.co/PjwdRvD/service-2.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "We believe in Positive Beauty. A vision of beauty that’s equitable, inclusive and sustainable, with brands that not only do less harm, but also do more good for people and for the planet.With more than 1 billion people using our beauty and personal care products every day, and even more seeing our advertising, we know our brands have the power to make a positive impact."
   },
   {
     "id": 3,
     "name": "CT scan",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMnnRxx4c55IsKAf0fcUVd8Nxi7m9Wfpotw&usqp=CAU",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose conditions. You may have a CT scan at a hospital or imaging center."
   },
   {
     "id": 4,
     "name": "Joint replacement",
     "img": "https://www.saukprairiehealthcare.org/portals/0/Images/Microsite-HERO/Joint-Replacement-Prairie-du-Sac-WI-800x325.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Joint replacement means removing part or all of a damaged joint and installing hardware to allow the limb to move without pain or limitations. The replacement hardware is called a prosthesis. These are made of plastic, metal, ceramic, or a combination of these materials."
   },
   {
     "id": 5,
     "name": "Examination & Diagnosis",
     "img": "https://i.ibb.co/7tF12GM/blog-4.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "The physical examination continues the diagnostic process, adding information obtained by inspection, palpation, percussion, and auscultation. When data accumulated from the history and physical examination are complete, a working diagnosis is established, and tests are selected that will help to retain or exclude that diagnosis.Patients are usually apprehensive and anxious when being examined because they feel exposed, vulnerable, and afraid of discomfort. The physician attempts to allay that anxiety by explaining which examinations are to be performed and the degree of discomfort they will entail. Throughout the examination, concern for the patient’s dignity must be maintained."
   },
   {
     "id": 6,
     "name": "Alzheimer's disease",
     "img": "https://i.ibb.co/prq0mdq/blog-1.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Alzheimer's is the most common cause of dementia, a general term for memory loss and other cognitive abilities serious enough to interfere with daily life. Alzheimer's disease accounts for 60-80% of dementia cases.Alzheimer's is not a normal part of aging. The greatest known risk factor is increasing age, and the majority of people with Alzheimer's are 65 and older. Alzheimer’s disease is considered to be younger-onset Alzheimer’s if it affects a person under 65. Younger-onset can also be referred to as early-onset Alzheimer’s. People with younger-onset Alzheimer’s can be in the early, middle or late stage of the disease."
   },
   {
     "id": 7,
     "name": "Laboratory services",
     "img": "https://i.ibb.co/7YpfJVS/blog-2.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "The Clinical diagnostic laboratories serve as reference laboratories for clinical diagnostic analysis of human disease cohorts and control subjects. The diagnostic laboratories are the only accredited labs under ISO15189 (quality) and ISO15190 (safety) in Bangladesh for as many as 160 different tests and parameters. "
   },
   {
     "id": 8,
     "name": "Heart Disease",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtFw5-u2yjqL3TBNB3NSxbml0G9GsalQz1g&usqp=CAU",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Heart disease is the leading cause of death in the United States, causing about 1 in 4 deaths. 1. The term “heart disease” refers to several types of heart conditions. In the United States, the most common type of heart disease is coronary artery disease (CAD), which can lead to heart attack."
   },
   {
     "id": 9,
     "name": "Dental Care",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFNfgIgACO0BvJs9cGQ9X1dqfcGuUdnCyJw&usqp=CAU",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Tooth decay and gum disease are caused by plaque, a sticky combination of bacteria and food. Plaque begins to build up on teeth within a few minutes after eating. If teeth are not cleaned well each day, plaque will lead to tooth decay or gum disease. If you do not remove plaque, it turns into a hard deposit called tartar that becomes trapped at the base of the tooth. Plaque and tartar irritate and inflame the gums. Bacteria and the toxins they produce cause the gums to become:"
   },
   {
     "id": 10,
     "name": "Body Surgery",
     "img": "https://media.istockphoto.com/photos/close-up-of-a-doctor-marking-the-human-skin-picture-id626961186?b=1&k=20&m=626961186&s=170667a&w=0&h=hygSKeoREg2jYTTUEO1nUEOKgiQmdKUN-ODxaMhX03Y=",
-    "description": "lorem30 dfjsjkfh"
+    "description": "If you’re thinking about having surgery to tweak or tighten your tummy, thighs, arms or buttocks, body contouring is an option that can improve your shape.However, like diet and exercise, it’s a process that takes careful planning and time. And it’s important to have a realistic outlook on what surgery can accomplish."
   },
   {
     "id": 11,
     "name": "Neurology Surgery",
     "img": "https://media.istockphoto.com/photos/male-doctor-in-surgical-clothes-looking-at-vertebral-mri-scan-picture-id1204177559?b=1&k=20&m=1204177559&s=170667a&w=0&h=-8O5xFKheEguWWwbj957RF3SPE56PrByF-B47Nb8N3c=",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Most people think of neurosurgery as brain surgery — but it is much more!It is the medical specialty concerned with the diagnosis and treatment of of patients with injury to, or diseases/disorders of the brain, spinal cord and spinal column, and peripheral nerves within all parts of the body. The specialty of neurosurgical care includes both adult and pediatric patients. Dependent upon the nature of the injury or disease a neurological surgeon may provide surgical and/or non-surgical care."
   },
   {
     "id": 12,
     "name": "Gynecology",
     "img": "https://media.istockphoto.com/photos/having-advise-with-a-gynecologist-picture-id638749062?b=1&k=20&m=638749062&s=170667a&w=0&h=o1xV9j-cqbBQPIeFRW7jy-Lih9xHbPTdBSFJaUQopuM=",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Gynaecology or gynecology (see spelling differences) is the medical practice dealing with the health of the female reproductive system. ... The term means 'the science of women'. Its counterpart is andrology, which deals with medical issues specific to the male reproductive system."
   },
   {
     "id": 13,
     "name": "Blood Test",
     "img": "https://i.ibb.co/sQfxZ8D/service-6.jpg",
-    "description": "lorem30 dfjsjkfh"
+    "description": "Regular blood testing is one of the most important ways to keep track of your overall physical well-being.Getting tested at routine intervals can allow you to see the way your body changes over time and empower you to make informed decisions about your health."
   }
 ]

@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import useServicesData from "../hooks/useServicesData";
 
 const Service = () => {
-  const { serviceName } = useParams();
+  const [diseases, setDiseases] = useState([]);
+  const { serviceId } = useParams();
+  useEffect(() => {
+    fetch("/Services.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setDiseases(data);
+      });
+  }, []);
+  const { services } = useServicesData();
+  const disease = diseases.find((el) => el.id === serviceId);
+  console.log(disease);
+
   return (
     <div>
-      <h1>this is single service details {serviceName}</h1>
+      <div className='bg-header-bg h-72 header'>
+        <Header></Header>
+        <div className='text-center pt-20'>
+          <h2 className='text-3xl text-white'>{serviceId}</h2>
+        </div>
+      </div>
+      <Footer></Footer>
     </div>
   );
 };

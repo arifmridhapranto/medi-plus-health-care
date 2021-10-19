@@ -32,7 +32,7 @@ function App() {
             <PrivateRoute exact path='/services'>
               <Services></Services>
             </PrivateRoute>
-            <PrivateRoute path='/service/:serviceName'>
+            <PrivateRoute path='/service/:serviceId'>
               <Service></Service>
             </PrivateRoute>
             <Route exact path='/login'>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useServicesData from "../../hooks/useServicesData";
-
 import Service from "../Service/Service";
 
 const Services = () => {
