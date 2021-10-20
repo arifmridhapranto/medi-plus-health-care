@@ -5,6 +5,7 @@ import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  updateProfile,
   signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
@@ -12,6 +13,7 @@ import initializeAuthentication from "../firebase/firebase.init";
 
 initializeAuthentication();
 const useFirebase = () => {
+  const [name, setName] = useState("");
   const [user, setUser] = useState({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -24,14 +26,7 @@ const useFirebase = () => {
   const googleSignIn = () => {
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
-      .then((result) => result.user)
-      .catch((error) => {
-        setError(error.message);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+    return signInWithPopup(auth, googleProvider);
   };
 
   const emailChange = (e) => {
@@ -41,10 +36,14 @@ const useFirebase = () => {
   const passwordChange = (e) => {
     setPassword(e.target.value);
   };
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
   const emailSignUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        console.log(result.user);
+        const user = result.user;
+        console.log(user);
       })
       .catch((error) => {
         setError(error.message);
@@ -67,10 +66,25 @@ const useFirebase = () => {
         // Signed in
         console.log(result.user);
         setError("");
+        setUserName();
         // ...
       })
       .catch((error) => {
         setError(error.message);
+      });
+  };
+
+  const setUserName = () => {
+    updateProfile(auth.currentUser, {
+      displayName: name,
+    })
+      .then(() => {
+        // Profile updated!
+        // ...
+      })
+      .catch((error) => {
+        // An error occurred
+        // ...
       });
   };
   useEffect(() => {
@@ -111,6 +125,7 @@ const useFirebase = () => {
     handleRegistrationSubmit,
     handleLoginSubmit,
     error,
+    handleNameChange,
   };
 };
 

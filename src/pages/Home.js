@@ -8,9 +8,11 @@ import SomeDetails from "../components/SomeDetails/SomeDetails";
 
 const Home = () => {
   return (
-    <div className='bg-hero-bg bg-cover h-screen'>
-      <Header></Header>
-      <HeroSection></HeroSection>
+    <div className=' '>
+      <div className='bg-hero-bg bg-auto h-screen'>
+        <Header></Header>
+        <HeroSection></HeroSection>
+      </div>
       <Services></Services>
       <SomeDetails></SomeDetails>
       <PersonalCare></PersonalCare>

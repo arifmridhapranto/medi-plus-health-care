@@ -9,12 +9,21 @@ const RegistrationForm = () => {
     passwordChange,
     handleRegistrationSubmit,
     error,
+    handleNameChange,
   } = useAuth();
 
   return (
     <div className='h-screen flex justify-center items-center flex-col'>
       <h1 className='text-3xl'>Registration Form</h1>
       <form className='flex flex-col' onSubmit={handleRegistrationSubmit}>
+        <input
+          onBlur={handleNameChange}
+          type='name'
+          name=''
+          id='Name'
+          placeholder='Name'
+          className='h-10 w-80 border-black border-2 mr-4 rounded mt-10'
+        />
         <input
           onBlur={emailChange}
           type='email'

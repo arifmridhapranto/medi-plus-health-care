@@ -7,10 +7,10 @@ const Services = () => {
   const { services } = useServicesData();
   return (
     <div className='mt-20 '>
-      <h1 className='text-center text-4xl font-bold mb-10'>
+      <h1 className='text-2xl text-center lg:text-4xl font-bold mb-10'>
         Health Services We Provided
       </h1>
-      <div className='container mx-auto grid grid-cols-3 gap-10'>
+      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10'>
         {services.slice(0, 6).map((service) => (
           <Service key={service.id} service={service}></Service>
         ))}

@@ -3,8 +3,10 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div className='mt-20 flex flex-col justify-center items-center'>
-      <h1 className='text-center text-4xl'>Feel Free to Contact Us</h1>
-      <form>
+      <h1 className='text-2xl text-center lg:text-4xl'>
+        Feel Free to Contact Us
+      </h1>
+      <form className='px-5'>
         <div className='my-5'>
           <input
             type='text'

@@ -11,11 +11,11 @@ const ContactDescription = () => {
     <div className='flex justify-around'>
       {items.map((item) => (
         <div key={item.id} className='text-center mt-20'>
-          <p className='text-5xl'>
+          <p className=' text-2xl lg:text-5xl'>
             <i className={item.icon}></i>
           </p>
-          <h1 className='text-2xl'>{item.name}</h1>
-          <p className='text-lg'>{item.details}</p>
+          <h1 className='text-lg lg:text-2xl'>{item.name}</h1>
+          <p className='text-sm lg:text-xl'>{item.details}</p>
         </div>
       ))}
     </div>

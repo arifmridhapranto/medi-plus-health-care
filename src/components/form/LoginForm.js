@@ -1,9 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const LoginForm = () => {
   const { googleSignIn, handleLoginSubmit, error } = useAuth();
+
+  const location = useLocation();
+  const redirect_uri = location?.state?.from || "/home";
+  const history = useHistory();
+
+  const handleGoogleLogIn = () => {
+    googleSignIn().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
 
   return (
     <div className='h-screen flex justify-center items-center flex-col'>
@@ -34,7 +44,7 @@ const LoginForm = () => {
       <div className=''>
         <Link to='/signup'>New User?</Link>
         <button
-          onClick={googleSignIn}
+          onClick={handleGoogleLogIn}
           className=' text-lg font-semibold border border-gray-900 rounded-lg py-1  text-white bg-btnColor hover:bg-btnHover px-9 mx-5 mt-10'>
           Google
         </button>
