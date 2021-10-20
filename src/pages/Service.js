@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import useServicesData from "../hooks/useServicesData";
 
 const Service = () => {
   const [diseases, setDiseases] = useState([]);
@@ -14,7 +13,6 @@ const Service = () => {
         setDiseases(data);
       });
   }, []);
-  const { services } = useServicesData();
   const disease = diseases.find((el) => el.id === serviceId);
   console.log(disease);
 

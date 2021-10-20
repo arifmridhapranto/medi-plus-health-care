@@ -15,6 +15,8 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
   const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
@@ -25,45 +27,50 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => result.user)
       .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.email;
+        setError(error.message);
       })
       .finally(() => {
         setIsLoading(false);
       });
   };
-  const emailSignUp = () => {
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // ..
-      });
-  };
+
   const emailChange = (e) => {
-    setEmail(e.target.value);
+    const validEmail = e.target.value.toString();
+    setEmail(validEmail);
   };
   const passwordChange = (e) => {
     setPassword(e.target.value);
   };
-  const emailSignin = () => {
+  const emailSignUp = () => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+  const handleRegistrationSubmit = (e) => {
+    emailSignUp();
+    e.preventDefault();
+    setError("");
+  };
+  const handleLoginSubmit = (e) => {
+    emailSignIn();
+    e.preventDefault();
+    setError("");
+  };
+
+  const emailSignIn = () => {
     signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+      .then((result) => {
         // Signed in
-        const user = userCredential.user;
+        console.log(result.user);
+        setError("");
         // ...
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        setError(error.message);
       });
   };
   useEffect(() => {
@@ -85,7 +92,7 @@ const useFirebase = () => {
         // Sign-out successful.
       })
       .catch((error) => {
-        // An error happened.
+        setError(error.message);
       })
       .finally(() => {
         setIsLoading(false);
@@ -97,10 +104,13 @@ const useFirebase = () => {
     googleSignIn,
     logOut,
     isLoading,
-    emailSignin,
+    emailSignIn,
     emailSignUp,
     emailChange,
     passwordChange,
+    handleRegistrationSubmit,
+    handleLoginSubmit,
+    error,
   };
 };
 
