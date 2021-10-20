@@ -1,6 +1,6 @@
-#Medi+ Health Care
+# Medi+ Health Care
 
-###Live Project: [Visit](https://medi-plus-health-care.firebaseapp.com/ "Health Care Services")
+### Live Project: [Visit](https://medi-plus-health-care.firebaseapp.com/ "Health Care Services")
 
 ## About This Website
 
